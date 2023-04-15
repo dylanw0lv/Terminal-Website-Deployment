@@ -11,6 +11,7 @@ const fetchWeather = async () => {
 
         console.log(weatherData)
 
+        let city = weatherData.name;
         let temp = weatherData.main.temp;
         let description = weatherData.weather[0].description;
         let humidity = weatherData.main.humidity;
@@ -27,3 +28,4 @@ Wind Speed: ${windSpeed} mph`;
     });
 
 }
+
