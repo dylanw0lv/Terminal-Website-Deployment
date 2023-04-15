@@ -148,7 +148,7 @@ function commander() {
       break;
 
     case "nutrition":
-      fetchNutrition();
+      // fetchNutrition();
       break;
 
     // Rock Paper Scissors
