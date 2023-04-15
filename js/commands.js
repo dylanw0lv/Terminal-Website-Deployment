@@ -6,7 +6,6 @@ skills             Lists the languages I am familiar with
 rps                Allows user to play Rock Paper Scissors against computer
 coinflip            Flips a coin
 weather            Displays current weather data for your location
-nutrition [FOOD]   Displays nutritional value of food item (Example Prompt: nutrition beef)
 clear              Clears terminal`;
 
 
