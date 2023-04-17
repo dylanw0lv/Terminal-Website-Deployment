@@ -119,7 +119,7 @@ function commander() {
     typeWriterEffect("Loading main page...", ".output", 10);
     setTimeout(()=> window.location.href = "https://master.d1aej28lkmlyg5.amplifyapp.com/", 1000);
   } else if (input === "clear") {
-    setTimeout(()=>window.location.reload, 10);
+    window.location.reload();
   } else {
     chatBot(input);
   }
