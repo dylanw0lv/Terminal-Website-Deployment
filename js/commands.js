@@ -101,4 +101,4 @@ const email = () => {window.open("mailto:dylanw0lv@gmail.com")};
 const github = () => {window.open("https://github.com/dylanw0lv")};
 
 // Opens Chat Bot
-const chatPage = () => {window.location.href = "./chatBot.html"}
+const chatPage = () => {window.location.href = "https://master.d1aej28lkmlyg5.amplifyapp.com/chatbot"}
