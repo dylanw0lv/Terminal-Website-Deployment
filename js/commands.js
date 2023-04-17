@@ -6,6 +6,7 @@ skills             Lists the languages I am familiar with
 rps                Allows user to play Rock Paper Scissors against computer
 coinflip            Flips a coin
 weather            Displays current weather data for your location
+chatbot            Opens chat bot
 clear              Clears terminal`;
 
 

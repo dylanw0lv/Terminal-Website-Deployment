@@ -28,6 +28,7 @@ newEl3.classList.add("startup3");
 
 newEl3.innerHTML = 
 `Type 'back' to go back to the main page.
+Type 'clear to clear the page.
 
 Type a prompt and click enter to prompt the bot.
 Ask me anything...`;

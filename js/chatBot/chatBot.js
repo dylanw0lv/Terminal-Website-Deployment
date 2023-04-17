@@ -118,6 +118,8 @@ function commander() {
   if (input === "back") {
     typeWriterEffect("Loading main page...", ".output", 10);
     setTimeout(()=> window.location.href = "./index.html", 1000);
+  } else if (input === "clear") {
+    setTimeout(()=>window.location.reload, 10);
   } else {
     chatBot(input);
   }
