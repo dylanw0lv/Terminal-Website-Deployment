@@ -5,8 +5,7 @@ const chatBot = async (text) => {
     let url = `https://e3rkh8un62.execute-api.us-east-1.amazonaws.com/?prompt=${message}`;
     
     try {
-      let request = await fetch(url);
-      let answer = await request.json();
+      let answer = await fetch(url);
       typeWriterEffect(answer, ".output", 10);
     } catch (e) {
       console.log(e);
