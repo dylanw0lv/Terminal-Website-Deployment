@@ -1,4 +1,20 @@
 
+const chatBot = async (text) => {
+    let message = text.replaceAll(" ", "_");
+
+    let url = `https://e3rkh8un62.execute-api.us-east-1.amazonaws.com/?prompt=${message}`;
+    
+    try {
+      let request = await fetch(url);
+      let answer = await request.json();
+      typeWriterEffect(answer, ".output", 10);
+    } catch (e) {
+      console.log(e);
+      typeWriterEffect("An error occurred. Try again...", ".output", 10);
+    }
+
+}
+
 // Turns off spellcheck (The red underline for misspelled words)
 document.body.setAttribute('spellcheck', false);
 
@@ -15,12 +31,8 @@ function checkKeyPressed(event) {
     noEdit();
     commander();
   } 
-  // else if (event.key === "up") {
-
-  // }
   
 }
-// let inputValues = [];
 
 
 // Listens to see if element is in focus and focuses if not 
@@ -39,8 +51,7 @@ function keepFocus() {
 // Gets text from the text area
 function getTextValue() {
   var value = document.querySelector('.input').textContent;
-  value = value.replaceAll(/\s/g, '');
-  return value.toLowerCase();
+  return value.trim();
 }
 
 
@@ -70,9 +81,9 @@ function addTextArea() {
 
 
 // Creates new pre element and removes class from old pre element
-function addPre() {
+function addParagraph() {
   document.querySelector(".output").classList.remove("output");
-  let newPre = document.createElement("pre");
+  let newPre = document.createElement("p");
   newPre.classList.add("output");
   document.getElementById("new-elements").appendChild(newPre);
 }
@@ -95,7 +106,7 @@ function typeWriterEffect(string, elementClass, speed) {
   }
   type();
   addTextArea();
-  addPre();
+  addParagraph();
   setTimeout(() => keepFocus(), 1);
 
 }
@@ -103,76 +114,13 @@ function typeWriterEffect(string, elementClass, speed) {
 // Outputs the information for each command
 function commander() {
   let input = getTextValue();
-
-  if (input.includes("nutrition")) {
-    input = "nutrition";
+  
+  if (input === "back") {
+    typeWriterEffect("Loading main page...", ".output", 10);
+    setTimeout(()=> window.location.href = "./index.html", 1000);
+  } else {
+    chatBot(input);
   }
-
-  switch(input) {
-    case "about":
-      typeWriterEffect(about, ".output", 10);
-      console.log(getTextValue());
-      break;
-    case "contact":
-      typeWriterEffect(contact, ".output", 10);
-      break;
-    case "linkedin":
-      typeWriterEffect("Opening LinkedIn...", ".output", 1);
-      setTimeout(linkedIn, 1000);
-      break;
-    case "games":
-      typeWriterEffect(games, ".output", 10);
-      break;
-    case "theme":
-      typeWriterEffect(theme, ".output", 10);
-      break;
-    case "help":
-      typeWriterEffect(help, ".output", 10);
-      break;
-    case "skills":
-      typeWriterEffect(skills, ".output", 10);
-      break;
-    case "clear":
-      window.location.reload();
-      break;
-    case "email":
-      typeWriterEffect("Opening email...", ".output", 1);
-      setTimeout(email, 1000);
-      break;
-    case "github":
-      typeWriterEffect("Opening GitHub...", ".output", 1);
-      setTimeout(github, 1000);
-      break;
-    case "coinflip":
-      typeWriterEffect(`It is ${coinFlip()}.`, ".output", 10);
-      break;
-
-    case "chatbot":
-      typeWriterEffect("Loading chatbot...", ".output", 10);
-      setTimeout(chatPage, 1000);
-      break;
-
-    // Rock Paper Scissors
-    case "rps":
-      typeWriterEffect(rps, ".output", 10);
-      break;
-    case "rock":
-      typeWriterEffect(rockPaperScissors("rock"), ".output", 10);
-      break;
-    case "scissors":
-      typeWriterEffect(rockPaperScissors("scissors"), ".output", 10);
-      break;
-    case "paper":
-      typeWriterEffect(rockPaperScissors("paper"), ".output", 10);
-      break;
-    case "weather":
-      fetchWeather();
-      break;
-
-    default:
-      typeWriterEffect(`That is not a valid command. For a list of commands, type 'help'.`, ".output", 10);
-      break;
-  }
+  
 
 }
-

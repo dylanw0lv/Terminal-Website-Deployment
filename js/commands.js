@@ -98,3 +98,6 @@ const email = () => {window.open("mailto:dylanw0lv@gmail.com")};
 
 //Opens GitHub
 const github = () => {window.open("https://github.com/dylanw0lv")};
+
+// Opens Chat Bot
+const chatPage = () => {window.location.href = "./chatBot.html"}

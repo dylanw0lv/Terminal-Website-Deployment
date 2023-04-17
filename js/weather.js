@@ -1,11 +1,11 @@
-
 const fetchWeather = async () => {
     navigator.geolocation.getCurrentPosition(async (pos) => {
         let lon = pos.coords.longitude;
         let lat = pos.coords.latitude;
 
         let url = `https://1dbtfjoli1.execute-api.us-east-1.amazonaws.com/?lat=${lat}&lon=${lon}`;
-    
+        
+        try {
         let requestWeather = await fetch(url);
         let weatherData = await requestWeather.json();
 
@@ -25,7 +25,10 @@ Humidity: ${humidity}%
 Wind Speed: ${windSpeed} mph`;
 
         typeWriterEffect(message, ".output", 10);
+        } catch (e) {
+            console.log(e);
+            typeWriterEffect("An error occurred. Try again...");
+        }
     });
-
 }
 
