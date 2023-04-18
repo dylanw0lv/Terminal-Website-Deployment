@@ -9,18 +9,12 @@ keepFocus();
 document.addEventListener("keydown", checkKeyPressed, false);
 
 
-
 function checkKeyPressed(event) {
   if (event.key === "Enter") {
     noEdit();
     commander();
   } 
-  // else if (event.key === "up") {
-
-  // }
-  
 }
-// let inputValues = [];
 
 
 // Listens to see if element is in focus and focuses if not 
@@ -100,6 +94,7 @@ function typeWriterEffect(string, elementClass, speed) {
 
 }
 
+
 // Outputs the information for each command
 function commander() {
   let input = getTextValue();
@@ -173,6 +168,5 @@ function commander() {
       typeWriterEffect(`That is not a valid command. For a list of commands, type 'help'.`, ".output", 10);
       break;
   }
-
 }
 

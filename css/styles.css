@@ -4,7 +4,6 @@ body {
 
 }
 
-
 .textarea {
 font-size: 1.5rem;
 outline: none;
@@ -15,7 +14,6 @@ overflow: hidden;
 resize: none;
 width: 40% !important;
 }
-
 
 .screen {
 color: rgb(104, 233, 90);
@@ -39,12 +37,10 @@ font-size: 1.5rem;
 margin-bottom: 2rem;
 }
 
-
 pre {
 font-family: 'VT323', monospace;
 font-size: 1.5rem;
 }
-
 
 .connected {
 display: inline-block;
@@ -64,9 +60,7 @@ height: 1.5rem;
 width: fit-content;
 }
 
-
 /* Animation for flicker*/ 
-
 @keyframes flicker {
   0% {
     opacity: 0.27861;
@@ -228,11 +222,9 @@ width: fit-content;
   pointer-events: none;
 }
 
-
 .crt {
   animation: textShadow 1.6s infinite;
 }
-
 
 /* Scan Line */
 .scanline {

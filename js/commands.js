@@ -64,7 +64,6 @@ Scissors wins against paper.
 Type 'rock', 'paper', or 'scissors'.`;
 
 
-
 // Flips coin 
 function coinFlip() {
     let sides = ['heads', 'tails'];

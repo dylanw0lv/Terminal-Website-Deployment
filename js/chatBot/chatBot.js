@@ -25,13 +25,11 @@ keepFocus();
 document.addEventListener("keydown", checkKeyPressed, false);
 
 
-
 function checkKeyPressed(event) {
   if (event.key === "Enter") {
     noEdit();
     commander();
   } 
-  
 }
 
 
@@ -111,6 +109,7 @@ function typeWriterEffect(string, elementClass, speed) {
 
 }
 
+
 // Outputs the information for each command
 function commander() {
   let input = getTextValue();
@@ -123,6 +122,4 @@ function commander() {
   } else {
     chatBot(input);
   }
-  
-
 }

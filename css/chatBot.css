@@ -3,7 +3,6 @@ body {
 
 }
 
-
 .textarea {
   font-size: 1.5rem;
   outline: none;
@@ -14,7 +13,6 @@ body {
   resize: none;
   width: 40% !important;
 }
-
 
 .screen {
   color: rgb(104, 233, 90);
@@ -38,7 +36,6 @@ body {
   margin-bottom: 2rem;
 }
 
-
 pre {
     font-family: 'VT323', monospace;
     font-size: 1.5rem;
@@ -50,7 +47,6 @@ p {
     overflow-wrap: normal;
     width: 60%;
 }
-
 
 .connected {
   display: inline-block;
@@ -72,7 +68,6 @@ p {
 
 
 /* Animation for flicker*/ 
-
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -140,131 +135,129 @@ p {
   }
 
   /* Animation for text shadow*/
-  @keyframes textShadow {
-    0% {
-      text-shadow: 0.4389924193300864px 0 1px rgb(2, 33, 2), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    5% {
-      text-shadow: 1.7928974010788217px 0 1px rgb(2, 33, 2), -1.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    10% {
-      text-shadow: 0.02956275843481219px 0 1px rgb(2, 33, 2), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    15% {
-      text-shadow: 0.40218538552878136px 0 1px rgb(2, 33, 2), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    20% {
-      text-shadow: 2.4794037899852017px 0 1px rgb(2, 33, 2), -2.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    25% {
-      text-shadow: 1.6125630401149584px 0 1px rgb(2, 33, 2), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    30% {
-      text-shadow: 0.7015590085143956px 0 1px rgb(2, 33, 2), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    35% {
-      text-shadow: 2.896914047650351px 0 1px rgb(2, 33, 2), -2.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    40% {
-      text-shadow: 2.870905614848819px 0 1px rgb(2, 33, 2), -2.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    45% {
-      text-shadow: 1.231056963361899px 0 1px rgb(2, 33, 2), -1.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    50% {
-      text-shadow: 0.08084290417898504px 0 1px rgb(2, 33, 2), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    55% {
-      text-shadow: 1.3758461067427543px 0 1px rgb(2, 33, 2), -1.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    60% {
-      text-shadow: 1.202193051050636px 0 1px rgb(2, 33, 2), -1.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    65% {
-      text-shadow: 1.8638780614874975px 0 1px rgb(2, 33, 2), -1.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    70% {
-      text-shadow: 0.48874025155497314px 0 1px rgb(2, 33, 2), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    75% {
-      text-shadow: 1.8948491305757957px 0 1px rgb(2, 33, 2), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    80% {
-      text-shadow: 0.0833037308038857px 0 1px rgb(2, 33, 2), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    85% {
-      text-shadow: 0.09769827255241735px 0 1px rgb(2, 33, 2), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    90% {
-      text-shadow: 2.443339761481782px 0 1px rgb(2, 33, 2), -2.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    95% {
-      text-shadow: 1.1841838852799786px 0 1px rgb(2, 33, 2), -1.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
-    100% {
-      text-shadow: 1.6208764473832513px 0 1px rgb(2, 33, 2), -1.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-    }
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgb(2, 33, 2), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
   }
+  5% {
+    text-shadow: 1.7928974010788217px 0 1px rgb(2, 33, 2), -1.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgb(2, 33, 2), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgb(2, 33, 2), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  20% {
+    text-shadow: 2.4794037899852017px 0 1px rgb(2, 33, 2), -2.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgb(2, 33, 2), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgb(2, 33, 2), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  35% {
+    text-shadow: 2.896914047650351px 0 1px rgb(2, 33, 2), -2.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  40% {
+    text-shadow: 2.870905614848819px 0 1px rgb(2, 33, 2), -2.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  45% {
+    text-shadow: 1.231056963361899px 0 1px rgb(2, 33, 2), -1.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgb(2, 33, 2), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  55% {
+    text-shadow: 1.3758461067427543px 0 1px rgb(2, 33, 2), -1.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  60% {
+    text-shadow: 1.202193051050636px 0 1px rgb(2, 33, 2), -1.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  65% {
+    text-shadow: 1.8638780614874975px 0 1px rgb(2, 33, 2), -1.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgb(2, 33, 2), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgb(2, 33, 2), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgb(2, 33, 2), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgb(2, 33, 2), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  90% {
+    text-shadow: 2.443339761481782px 0 1px rgb(2, 33, 2), -2.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  95% {
+    text-shadow: 1.1841838852799786px 0 1px rgb(2, 33, 2), -1.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+  100% {
+    text-shadow: 1.6208764473832513px 0 1px rgb(2, 33, 2), -1.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+  }
+}
 
 .crt::after {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.15s infinite;
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
 }
 .crt::before {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
 }
-
 
 .crt {
     animation: textShadow 1.6s infinite;
 }
 
-
 /* Scan Line */
 .scanline {
-    width: 99%;
-    height: 100px;
-    z-index: 8;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(104, 233, 90, 0.3) 10%,
-        rgba(0, 0, 0, 0.1) 100%
-    );
-    opacity: 0.1;
-    position: fixed;
-    bottom: 100%;
-    animation: scanline 8s linear infinite;
+  width: 99%;
+  height: 100px;
+  z-index: 8;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(104, 233, 90, 0.3) 10%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  opacity: 0.1;
+  position: fixed;
+  bottom: 100%;
+  animation: scanline 8s linear infinite;
 }
 
 @keyframes scanline {
-    0% {
-        bottom: 100%;
-    }
-    80% {
-        bottom: 100%;
-    }
-    100% {
-        bottom: 0%;
-    }
+  0% {
+      bottom: 100%;
+  }
+  80% {
+      bottom: 100%;
+  }
+  100% {
+      bottom: 0%;
+  }
 }
