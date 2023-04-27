@@ -13,24 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
     <!-- CSS style sheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="crt">
-    <div class="screen">
-
-        <div id="startup">
-            <script src="js/startup.js"></script>
-        </div>
-
-        <pre class="together">user@dwolverton.com:~$</pre>
-        <div  class="input together textarea" contenteditable="true" spellcheck="false"></div>
-        <pre class="output"></pre>
-        
-        <div id="new-elements"></div>
-    </div>
     <div class="scanline"></div>
-    <script src="js/commands.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/main.js"></script>
+    
+    <div id="screen"></div>
+
+    <script type="module" src="./js/main/app.js"></script>
 </body>
 </html>

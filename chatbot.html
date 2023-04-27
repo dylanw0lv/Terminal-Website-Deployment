@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan's Chat Bot</title>
+    <title>Dylan's Terminal</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">    
 
     <!-- google fonts -->
@@ -13,23 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     
     <!-- CSS style sheet -->
-    <link rel="stylesheet" href="css/chatBot.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="crt">
-    <div class="screen">
-
-        <div id="startup">
-            <script src="js/chatBot/startChatBot.js"></script>
-        </div>
-
-        <pre class="together">user@dwolverton.com:~$</pre>
-        <div  class="input together textarea" contenteditable="true" spellcheck="false"></div>
-        <p class="output"></p>
-        
-        <div id="new-elements"></div>
-    </div>
-
     <div class="scanline"></div>
-    <script src="js/chatBot/chatBot.js"></script>
+    
+    <div id="screen"></div>
+
+    <script type="module" src="./js/chatbot/app.js"></script>
 </body>
 </html>
