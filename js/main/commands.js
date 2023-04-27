@@ -24,6 +24,9 @@ rps                Allows user to play Rock Paper Scissors against computer
 coinflip            Flips a coin
 weather            Displays current weather data for your location
 chatbot            Opens chat bot
+red                Changes terminal color to red
+blue               Changes terminal color to blue
+green              Changes terminal color to green
 clear              Clears terminal`;
 
 export const about = 
