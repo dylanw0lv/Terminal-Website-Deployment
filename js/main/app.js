@@ -102,5 +102,5 @@ export const commander = async () => {
 }
 
 
-const terminal = new Terminal("screen", commander, "green", corpText, asciiText, welcomeText, tagline);
+const terminal = new Terminal(commander, "green", corpText, asciiText, welcomeText, tagline);
 terminal.startup();

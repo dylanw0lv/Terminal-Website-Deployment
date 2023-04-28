@@ -43,6 +43,6 @@ const commander = async () => {
     })
 }
 
-const chat = new Chatbot("screen", commander, "green", corpText, asciiText, welcomeText, tagline);
+const chat = new Chatbot(commander, "green", corpText, asciiText, welcomeText, tagline);
 
 chat.startup();

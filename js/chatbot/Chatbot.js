@@ -28,7 +28,6 @@ export class Chatbot extends Terminal {
     prompt(message) {
         return new Promise(async (resolve, reject) => {
             message = message.replaceAll(" ", "_");
-    
             let url = `https://e3rkh8un62.execute-api.us-east-1.amazonaws.com/?prompt=${message}`;
             
             try {
