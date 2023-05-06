@@ -1,4 +1,5 @@
 import { corpText, asciiArt, welcomeMessage } from "./text.js";
+import { paragraph } from "./paragraph.js";
 
 export class TypingTest {
     constructor() {
@@ -73,17 +74,10 @@ export class TypingTest {
     }
 
     async loadText() {
-        try {
-            let response = await fetch("metaphorpsum.com/paragraphs/1/2");
-            let paragraph = await response.text();
-            let sentencesRaw = paragraph.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
-            sentencesRaw.forEach((sentence) => {
-                sentence = (sentence + " ").split("").map(char => `<span>${char}</span>`).join("");
-                $(".typing-text p").append(sentence);
-            })
-        } catch (e) {
-            console.log(e);
-        }
+            let paragraphArray = paragraph.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
+            let sentencesRaw = paragraphArray[Math.floor((Math.random()*paragraphArray.length))] + " " + paragraphArray[Math.floor((Math.random()*paragraphArray.length))] + " ";
+            let sentences = sentencesRaw.split("").map(char => `<span>${char}</span>`).join("");
+            $(".typing-text p").append(sentences);
     }
 
     output(text, elementClass, speed=100) {
@@ -161,7 +155,7 @@ export class TypingTest {
         }
     }
 
-    async reloadTest() {
+    reloadTest() {
         $(".typing-text p span").remove();
         $(".time").remove()
         $(".mistakes").remove();
@@ -186,7 +180,7 @@ export class TypingTest {
             "class": "wpm"
         }).appendTo("#results");
 
-        await this.loadText();
+        this.loadText();
 
         $(".time").html("Time: <span>60</span>s")
         $(".mistakes").html("Mistakes: <span>0</span>")
