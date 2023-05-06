@@ -19,14 +19,15 @@ export const tagline = "user@dwolverton.com:~$ ";
 export const help = 
 `about              Who is Dylan?
 contact            Displays contact information
-skills             Lists the languages I am familiar with
-rps                Allows user to play Rock Paper Scissors against computer
+skills             Lists my skills
+rps                Play Rock Paper Scissors
 coinflip            Flips a coin
-weather            Displays current weather data for your location
-chatbot            Opens chat bot
-red                Changes terminal color to red
-blue               Changes terminal color to blue
-green              Changes terminal color to green
+weather            Displays current weather
+chatbot            Opens chat bot page
+speedtest          Opens typing speed test page
+red                Changes theme to red
+blue               Changes theme to blue
+green              Changes theme to green
 clear              Clears terminal`;
 
 export const about = 
@@ -60,8 +61,10 @@ JavaScript    Intermediate
 Python        Intermediate
 PHP           Beginner
 C++           Beginner
+jQuery        Intermediate
 Reactjs       Beginner
-Bootstrap     Beginner`;
+Bootstrap     Beginner
+AWS           Intermediate`;
 
 export const rpsDirections = 
 `Welcome to Rock Paper Scissors!

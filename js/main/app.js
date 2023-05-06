@@ -92,6 +92,11 @@ export const commander = async () => {
                 setTimeout(()=>window.location.href="./chatbot.html", 500)
                 break;
 
+            case "speedtest":
+                terminal.output("Loading the typing test...");
+                setTimeout(()=>window.location.href="./speedtest.html", 500)
+                break;
+
             default:
                 terminal.output(`That is not a valid command. For a list of commands, type 'help'.`);
                 break;

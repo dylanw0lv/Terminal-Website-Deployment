@@ -137,5 +137,3 @@ export class Terminal {
         $(".connected").remove();
     }
 }
-
-

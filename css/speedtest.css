@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
   --text-color: rgb(104, 233, 90);
   --background-color: rgb(1, 18, 1);
@@ -12,57 +14,93 @@
 * {
   font-family: 'VT323', monospace;
   background-color: var(--background-color);
-  color: var(--text-color);
 }
 
-#screen {
-  margin-left: 2rem !important;
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+.input{
+  opacity: 0;
+  z-index: -999; 
+  position: absolute;
+}
+
+.typing-text::-webkit-scrollbar{
+  width: 0;
+}
+
+#results {
+  margin-left: 3rem;
+  color: var(--text-color);
   font-size: 1.5rem;
 }
 
-.scanline {
-  margin: 0;
+.border-top, .border-bottom {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+  margin: 2rem;
+}
+
+.typing-text p {
+  margin-left: 3rem;
+  width: 810px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.typing-text p span {
+  position: relative;
+  color: #56964f;
+}
+
+.active {
+  border-left: 2px solid var(--text-color);
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50%{
+      border-color: var(--background-color);
+  }
+}
+
+.correct {
+  color: rgb(104, 233, 90) !important;
+}
+
+.incorrect{
+  color: #cb3439 !important;
+}
+
+.space_incorrect {
+  text-decoration: underline;
+  text-decoration-color: #cb3439;
 }
 
 /* Startup */
+#start {
+  color: var(--text-color);
+  margin: 2rem;
+}
+
 .rightsMessage {
+  margin-top: 2rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  }
+}
   
 .asciiArt {
   font-size: 1rem !important;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .welcomeMessage {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.outputEl {
-  white-space: pre-wrap;
-  width: 50%;
-}
-
-.input {
-  font-size: 1.5rem;
-  outline: none;
-  border: none;
-  height: 1.5rem;
-  overflow: hidden;
-  resize: none;
-  width: 40% !important;
-  white-space: nowrap;
-}
-
-.connected {
-  display: inline-block;
-  margin: 0 !important;
-  padding: 0;
-  vertical-align: top;
-  height: 1.5rem;
-  width: fit-content;
+  margin-bottom: 3rem;
 }
 
 /* Animation for flicker*/ 
@@ -233,7 +271,8 @@
 
 /* Scan Line */
 .scanline {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0;
   width: 100%;
   height: 100px;
   z-index: 8;
