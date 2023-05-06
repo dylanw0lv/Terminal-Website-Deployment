@@ -74,7 +74,7 @@ export class TypingTest {
 
     async loadText() {
         try {
-            let response = await fetch("http://metaphorpsum.com/paragraphs/1/2");
+            let response = await fetch("metaphorpsum.com/paragraphs/1/2");
             let paragraph = await response.text();
             let sentencesRaw = paragraph.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
             sentencesRaw.forEach((sentence) => {
