@@ -14,10 +14,10 @@ export const welcomeText = "Type 'help' for a list of commands or prompt the cha
 
 export const help = 
 `back               Navigates back to main page
-clear              clears the terminal
-red                changes terminal color to red
-green              changes terminal color to green
-blue               changes terminal color to blue`;
+clear              Clears the terminal
+red                Changes theme to red
+green              Changes theme to green
+blue               Changes theme to blue`;
 
 
 export const tagline = "Enter a prompt or command: ";
