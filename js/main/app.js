@@ -89,12 +89,12 @@ export const commander = async () => {
             
             case "chatbot":
                 terminal.output("Loading chat bot...");
-                setTimeout(()=>window.location.href="dwolverton.com/chatbot", 500)
+                setTimeout(()=>window.location.href="https://www.dwolverton.com/chatbot", 500)
                 break;
 
             case "speedtest":
                 terminal.output("Loading the typing test...");
-                setTimeout(()=>window.location.href="dwolverton.com/speedtest", 500)
+                setTimeout(()=>window.location.href="https://www.dwolverton.com/speedtest", 500)
                 break;
 
             default:

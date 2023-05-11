@@ -111,8 +111,6 @@ export const email = () => {window.open("mailto:dylanw0lv@gmail.com")};
 //Opens GitHub
 export const github = () => {window.open("https://github.com/dylanw0lv")};
 
-// Opens Chat Bot
-export const chatPage = () => {window.location.href = "https://master.d1aej28lkmlyg5.amplifyapp.com/chatbot"}
 
 // Weather API call
 export const fetchWeather = async () => {
