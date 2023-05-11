@@ -13,7 +13,7 @@ const commander = async () => {
 
             case "back":
                 chat.type("Loading main page...");
-                setTimeout(()=>window.location.href="dwolverton.com", 500)
+                setTimeout(()=>window.location.href="https://www.dwolverton.com/", 500)
                 break;
             
             case "clear":
