@@ -62,7 +62,7 @@ export class TypingTest {
 
         $(document).on("keydown", (event) => {
             if (event.key === "Escape") {
-                setTimeout(()=>window.location.href="./index.html", 10)
+                setTimeout(()=>window.location.href="dwolverton.com", 10)
             } else if (event.key === "Tab") {
                 event.preventDefault()
                 this.reloadTest();
